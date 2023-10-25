@@ -17,7 +17,7 @@ DaSL Badges
 
 When using the recommended method (a badge embedded in your project's README file), it's as concise as this one image:
 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.getwilds.org/badges/latest/active.svg)](https://github.com/getwilds/badges/#active)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.getwilds.org/badges/active.svg)](https://github.com/getwilds/badges/#active)
 
 This incorporates three components:
 
