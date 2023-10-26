@@ -30,7 +30,7 @@ This incorporates three components:
 
 ## Use a badge
 
-Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 4 markup types (markdown, restructured text, or html).
+Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 3 markup types (markdown, restructured text, or html).
 
 **Concept**
 
