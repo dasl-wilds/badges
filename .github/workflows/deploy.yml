@@ -14,8 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2.2
+        run: bundle install
+
+      - name: Jekyll build
+        run: |
+          jekyll build
+
       - name: Publish badges
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
-          folder: .
+          folder: _site
