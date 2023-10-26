@@ -9,10 +9,12 @@ jobs:
   deploy:
     name: Deploy badges to gh-pages
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Publish docs
+      - name: Publish badges
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
