@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 ## Intro
@@ -20,8 +20,6 @@ This set of badges is adapted from Repostatus.org.
 
 ## What It Looks Like
 
-When using the recommended method (a badge embedded in your project's README file), it's as concise as this one image:
-
 [![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://github.com/getwilds/badges/#stable)
 
 This incorporates three components:
@@ -32,9 +30,67 @@ This incorporates three components:
 
 ## Use a badge
 
-Copy/paste the following for **Active**
+Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 4 markup types (markdown, restructured text, or html).
 
-> `[![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://github.com/getwilds/badges/#stable)`
+**Concept**
+
+<div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger" onclick="copysample('concept','md')">Markdown</button>
+  <button type="button" class="btn btn-warning" onclick="copysample('concept','rst')">ReST</button>
+  <button type="button" class="btn btn-success" onclick="copysample('concept','html')">HTML</button>
+</div>
+
+<br>
+
+**Experimental**
+
+<div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger" onclick="copysample('experimental','md')">Markdown</button>
+  <button type="button" class="btn btn-warning" onclick="copysample('experimental','rst')">ReST</button>
+  <button type="button" class="btn btn-success" onclick="copysample('experimental','html')">HTML</button>
+</div>
+
+<br>
+
+**Prototype**
+
+<div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger" onclick="copysample('prototype','md')">Markdown</button>
+  <button type="button" class="btn btn-warning" onclick="copysample('prototype','rst')">ReST</button>
+  <button type="button" class="btn btn-success" onclick="copysample('prototype','html')">HTML</button>
+</div>
+
+<br>
+
+**Stable**
+
+<div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger" onclick="copysample('stable','md')">Markdown</button>
+  <button type="button" class="btn btn-warning" onclick="copysample('stable','rst')">ReST</button>
+  <button type="button" class="btn btn-success" onclick="copysample('stable','html')">HTML</button>
+</div>
+
+<br>
+
+**Deprecated**
+
+<div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger" onclick="copysample('deprecated','md')">Markdown</button>
+  <button type="button" class="btn btn-warning" onclick="copysample('deprecated','rst')">ReST</button>
+  <button type="button" class="btn btn-success" onclick="copysample('deprecated','html')">HTML</button>
+</div>
+
+<br>
+
+
+
+<br>
+
+<!-- [markdown](javascript:showsample('stable','md')) -->
+
+<div id="samplewrapper" style="display: none;"><h5 id="sampletitle"></h5><div id="samplecode"></div></div>
+
+<br>
 
 
 ## References
