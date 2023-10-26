@@ -1,0 +1,1 @@
+<a href="https://getwilds.github.io/badges/#stable"><img src="https://getwilds.github.io/badges/badges/stable.svg" alt="Project Status: Stable – Useable, full support, open to feedback, stable API." /></a>
