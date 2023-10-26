@@ -34,6 +34,12 @@ This incorporates three components:
 2. Alt-text on the image (this can generally be viewed in a browser by mousing over the image) which begins with the canonical project status ("Project Status: <status name>") and can optionally be followed by a human-readable description of the status, provided by the project's maintainer(s). Such text might also be useful to appear after the badge.
 3. The image is linked back to the particular status description at <https://github.com/getwilds/badges>.
 
+## Use a badge
+
+Copy/paste the following for **Active**
+
+> `[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://getwilds.github.io/badges/badges/active.svg)](https://getwilds.github.io/badges/#active)`
+
 
 ## References
 
