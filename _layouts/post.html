@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+{% include head.html %}
+
+{{ content }}
+
+<script type="text/javascript">
+  // var codeBlocks = document.querySelectorAll('pre.highlight');
+
+  // codeBlocks.forEach(function (codeBlock) {
+  //   var copyButton = document.createElement('button');
+  //   copyButton.className = 'copy';
+  //   copyButton.type = 'button';
+  //   copyButton.ariaLabel = 'Copy code to clipboard';
+  //   copyButton.innerText = 'Copy';
+
+  //   codeBlock.append(copyButton);
+
+  //   copyButton.addEventListener('click', function () {
+  //     var code = codeBlock.querySelector('code').innerText.trim();
+  //     window.navigator.clipboard.writeText(code);
+
+  //     copyButton.innerText = 'Copied';
+  //     var fourSeconds = 4000;
+
+  //     setTimeout(function () {
+  //       copyButton.innerText = 'Copy';
+  //     }, fourSeconds);
+  //   });
+  // });
+
+  function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+
+  var badge_data;
+
+  $.getJSON('badges/badges.json', function(json){ badge_data = json; });
+
+  // function showsample(badgename, markup) {
+  //   outtype = '';
+  //   if ( markup == "md" ) {
+  //     outtype = "Markdown";
+  //   } else if ( markup == "rst" ) {
+  //     outtype = "ReST";
+  //   } else if ( markup == "html") {
+  //     outtype = "HTML";
+  //   }
+  //   $("#sampletitle").html(outtype + " for " + badge_data[badgename]['display_name'] + " Status (<a href=\"https://getwilds.github.io/badges/badges/" + badgename + "_" + markup + ".txt\">direct link</a>)");
+  //   $.get('https://getwilds.github.io/badges/badges/' + badgename + '_' + markup + '.txt', function(data) {
+  //     $("#samplecode").html('<pre>' + htmlEncode(data) + '</pre>');
+  //     $("#samplewrapper").show();
+  //   });
+  // }
+
+  function copysample(badgename, markup) {
+    outtype = '';
+    if ( markup == "md" ) {
+      outtype = "Markdown";
+    } else if ( markup == "rst" ) {
+      outtype = "ReST";
+    } else if ( markup == "html") {
+      outtype = "HTML";
+    }
+    $("#sampletitle").html(outtype + " for " + badge_data[badgename]['display_name'] + " Status (<a href=\"https://getwilds.github.io/badges/badges/" + badgename + "_" + markup + ".txt\">direct link</a>)");
+    $.get('https://getwilds.github.io/badges/badges/' + badgename + '_' + markup + '.txt', function(data) {
+      $("#samplecode").html('<pre>' + htmlEncode(data) + '</pre>');
+      copyToClipboard("#samplecode");
+    });
+  }
+
+  function htmlEncode(value) {
+    return $('<div/>').text(value).html();
+  }
+</script>

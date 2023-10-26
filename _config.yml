@@ -1,3 +1,4 @@
 theme: jekyll-theme-architect
 title: DaSL Badges
 description: Badges to communicate state across DaSL repositories
+highlighter: rouge
