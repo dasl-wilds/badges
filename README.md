@@ -24,3 +24,13 @@ This incorporates three components:
 1. The image URL, which serves as the machine-readable status identifier. It points to a status-specific image hosted on getwilds.org.
 2. Alt-text on the image (this can generally be viewed in a browser by mousing over the image) which begins with the canonical project status ("Project Status: <status name>") and can optionally be followed by a human-readable description of the status, provided by the project's maintainer(s). Such text might also be useful to appear after the badge.
 3. The image is linked back to the particular status description at <https://github.com/getwilds/badges>.
+
+
+## References
+
+These badges and content of this repository were adapted from the following sources:
+
+- [repostatus.org](https://www.repostatus.org/)
+	- license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+<!-- - lifecycle from Posit
+	- license: [MIT](https://choosealicense.com/licenses/mit/) -->
