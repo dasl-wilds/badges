@@ -1,3 +1,3 @@
 .. image:: https://getwilds.github.io/badges/badges/prototype.svg
-   :alt: Project Status: Prototype – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.
+   :alt: Project Status: Prototype – Useable, some support, open to feedback, unstable API.
    :target: https://getwilds.github.io/badges/#prototype
