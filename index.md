@@ -20,7 +20,7 @@ This set of badges is adapted from Repostatus.org.
 
 ## What It Looks Like
 
-[![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://github.com/getwilds/badges/#stable)
+[![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://getwilds.github.io/badges/#stable)
 
 This incorporates three components:
 
@@ -30,63 +30,55 @@ This incorporates three components:
 
 ## Use a badge
 
-Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 3 markup types (markdown, restructured text, or html).
+Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 3 markup types (<a class="btn btn-sm btn-info" role="button">Markdown</a>, Restructured text (<a class="btn btn-sm btn-primary" role="button">ReST</a>), or <a class="btn btn-sm btn-secondary" role="button">HTML</a>; i.e., if your README is a markdown file, get the Markdown version of the badge). 
 
-**Concept**
+**Concept** [![Project Status: Concept – Not useable, no support, not open to feedback, unstable API.](/badges/concept.svg)](https://getwilds.github.io/badges/#concept)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger" onclick="copysample('concept','md')">Markdown</button>
-  <button type="button" class="btn btn-warning" onclick="copysample('concept','rst')">ReST</button>
-  <button type="button" class="btn btn-success" onclick="copysample('concept','html')">HTML</button>
+  <button type="button" class="btn btn-info" onclick="copysample('concept','md')">Markdown</button>
+  <button type="button" class="btn btn-primary" onclick="copysample('concept','rst')">ReST</button>
+  <button type="button" class="btn btn-secondary" onclick="copysample('concept','html')">HTML</button>
 </div>
 
 <br>
 
-**Experimental**
+**Experimental** [![Project Status: Experimental – Useable, some support, not open to feedback, unstable API.](/badges/experimental.svg)](https://getwilds.github.io/badges/#experimental)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger" onclick="copysample('experimental','md')">Markdown</button>
-  <button type="button" class="btn btn-warning" onclick="copysample('experimental','rst')">ReST</button>
-  <button type="button" class="btn btn-success" onclick="copysample('experimental','html')">HTML</button>
+  <button type="button" class="btn btn-info" onclick="copysample('experimental','md')">Markdown</button>
+  <button type="button" class="btn btn-primary" onclick="copysample('experimental','rst')">ReST</button>
+  <button type="button" class="btn btn-secondary" onclick="copysample('experimental','html')">HTML</button>
 </div>
 
 <br>
 
-**Prototype**
+**Prototype** [![Project Status: Prototype – Useable, some support, open to feedback, unstable API.](/badges/prototype.svg)](https://getwilds.github.io/badges/#prototype)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger" onclick="copysample('prototype','md')">Markdown</button>
-  <button type="button" class="btn btn-warning" onclick="copysample('prototype','rst')">ReST</button>
-  <button type="button" class="btn btn-success" onclick="copysample('prototype','html')">HTML</button>
+  <button type="button" class="btn btn-info" onclick="copysample('prototype','md')">Markdown</button>
+  <button type="button" class="btn btn-primary" onclick="copysample('prototype','rst')">ReST</button>
+  <button type="button" class="btn btn-secondary" onclick="copysample('prototype','html')">HTML</button>
 </div>
 
 <br>
 
-**Stable**
+**Stable** [![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://getwilds.github.io/badges/#stable)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger" onclick="copysample('stable','md')">Markdown</button>
-  <button type="button" class="btn btn-warning" onclick="copysample('stable','rst')">ReST</button>
-  <button type="button" class="btn btn-success" onclick="copysample('stable','html')">HTML</button>
+  <button type="button" class="btn btn-info" onclick="copysample('stable','md')">Markdown</button>
+  <button type="button" class="btn btn-primary" onclick="copysample('stable','rst')">ReST</button>
+  <button type="button" class="btn btn-secondary" onclick="copysample('stable','html')">HTML</button>
 </div>
 
 <br>
 
-**Deprecated**
+**Deprecated** [![Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.](/badges/deprecated.svg)](https://getwilds.github.io/badges/#deprecated)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-danger" onclick="copysample('deprecated','md')">Markdown</button>
-  <button type="button" class="btn btn-warning" onclick="copysample('deprecated','rst')">ReST</button>
-  <button type="button" class="btn btn-success" onclick="copysample('deprecated','html')">HTML</button>
+  <button type="button" class="btn btn-info" onclick="copysample('deprecated','md')">Markdown</button>
+  <button type="button" class="btn btn-primary" onclick="copysample('deprecated','rst')">ReST</button>
+  <button type="button" class="btn btn-secondary" onclick="copysample('deprecated','html')">HTML</button>
 </div>
-
-<br>
-
-
-
-<br>
-
-<!-- [markdown](javascript:showsample('stable','md')) -->
 
 <div id="samplewrapper" style="display: none;"><h5 id="sampletitle"></h5><div id="samplecode"></div></div>
 
@@ -97,5 +89,4 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 
 These badges and content of this repository were adapted from the following sources:
 
-- [repostatus.org](https://www.repostatus.org/)
-	- license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- [repostatus.org](https://www.repostatus.org/) - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
