@@ -1,26 +1,26 @@
 {
   "concept": {
-    "description": "Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.",
+    "description": "Not useable, no support, not open to feedback, unstable API.",
     "display_name": "Concept",
     "url": "https://getwilds.github.io/badges/badges/concept.svg"
   },
   "experimental": {
-    "description": "Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.",
+    "description": "Useable, some support, not open to feedback, unstable API.",
     "display_name": "Experimental",
     "url": "https://getwilds.github.io/badges/badges/experimental.svg"
   },
   "prototype": {
-    "description": "The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.",
+    "description": "Useable, some support, open to feedback, unstable API.",
     "display_name": "Prototype",
     "url": "https://getwilds.github.io/badges/badges/prototype.svg"
   },
   "stable": {
-    "description": "The project has reached a stable, usable state and is being actively developed.",
+    "description": "Useable, full support, open to feedback, stable API.",
     "display_name": "Stable",
     "url": "https://getwilds.github.io/badges/badges/stable.svg"
   },
   "deprecated": {
-    "description": "Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.",
+    "description": "Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.",
     "display_name": "Deprecated",
     "url": "https://getwilds.github.io/badges/badges/deprecated.svg"
   }

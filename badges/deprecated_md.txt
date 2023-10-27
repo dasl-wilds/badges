@@ -1,1 +1,1 @@
-[![Project Status: Deprecated – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.](https://getwilds.github.io/badges/badges/deprecated.svg)](https://getwilds.github.io/badges/#deprecated)
+[![Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.](https://getwilds.github.io/badges/badges/deprecated.svg)](https://getwilds.github.io/badges/#deprecated)
