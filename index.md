@@ -35,7 +35,8 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 **Concept** [![Project Status: Concept – Not useable, no support, not open to feedback, unstable API.](/badges/concept.svg)](https://getwilds.github.io/badges/#concept)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-info" onclick="copysample('concept','md')">Markdown</button>
+  <button type="button" class="btn btn-info" id="copyButton" onclick="copysample('concept','md')">Markdown</button>
+  <span class="copied" hidden>Copied !</span>
   <button type="button" class="btn btn-primary" onclick="copysample('concept','rst')">ReST</button>
   <button type="button" class="btn btn-secondary" onclick="copysample('concept','html')">HTML</button>
 </div>
