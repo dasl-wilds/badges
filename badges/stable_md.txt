@@ -1,1 +1,1 @@
-[![Project Status: Stable – Useable, full support, open to feedback, stable API.](https://getwilds.github.io/badges/badges/stable.svg)](https://getwilds.github.io/badges/#stable)
+[![Project Status: Stable – Useable, full support, open to feedback, stable API.](https://getwilds.org/badges/badges/stable.svg)](https://getwilds.org/badges/#stable)

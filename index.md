@@ -20,19 +20,19 @@ These badges are adapted from Repostatus.org.
 
 ## What It Looks Like
 
-[![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://getwilds.github.io/badges/#stable)
+[![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://getwilds.org/badges/#stable)
 
 This incorporates three components:
 
 1. The image URL, which serves as the machine-readable status identifier. It points to a status-specific image hosted on `getwilds.org`.
 2. Alt-text on the image (this can generally be viewed in a browser by mousing over the image) which begins with the canonical project status ("Project Status: <status name>") and can optionally be followed by a human-readable description of the status, provided by the project's maintainer(s). Such text might also be useful to appear after the badge.
-3. The image is linked back to the particular status description at <https://getwilds.github.io/badges/>.
+3. The image is linked back to the particular status description at <https://getwilds.org/badges/>.
 
 ## Use a badge
 
 Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 3 markup types (<a class="btn btn-sm btn-info" role="button">Markdown</a>, Restructured text (<a class="btn btn-sm btn-primary" role="button">ReST</a>), or <a class="btn btn-sm btn-secondary" role="button">HTML</a>; i.e., if your README is a markdown file, get the Markdown version of the badge). 
 
-**Concept** [![Project Status: Concept – Not useable, no support, not open to feedback, unstable API.](/badges/concept.svg)](https://getwilds.github.io/badges/#concept)
+**Concept** [![Project Status: Concept – Not useable, no support, not open to feedback, unstable API.](/badges/concept.svg)](https://getwilds.org/badges/#concept)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
   <button type="button" class="btn btn-info" onclick="copysample('concept','md')">Markdown</button>
@@ -42,7 +42,7 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 
 <br>
 
-**Experimental** [![Project Status: Experimental – Useable, some support, not open to feedback, unstable API.](/badges/experimental.svg)](https://getwilds.github.io/badges/#experimental)
+**Experimental** [![Project Status: Experimental – Useable, some support, not open to feedback, unstable API.](/badges/experimental.svg)](https://getwilds.org/badges/#experimental)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
   <button type="button" class="btn btn-info" onclick="copysample('experimental','md')">Markdown</button>
@@ -52,7 +52,7 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 
 <br>
 
-**Prototype** [![Project Status: Prototype – Useable, some support, open to feedback, unstable API.](/badges/prototype.svg)](https://getwilds.github.io/badges/#prototype)
+**Prototype** [![Project Status: Prototype – Useable, some support, open to feedback, unstable API.](/badges/prototype.svg)](https://getwilds.org/badges/#prototype)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
   <button type="button" class="btn btn-info" onclick="copysample('prototype','md')">Markdown</button>
@@ -62,7 +62,7 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 
 <br>
 
-**Stable** [![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://getwilds.github.io/badges/#stable)
+**Stable** [![Project Status: Stable – Useable, full support, open to feedback, stable API.](/badges/stable.svg)](https://getwilds.org/badges/#stable)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
   <button type="button" class="btn btn-info" onclick="copysample('stable','md')">Markdown</button>
@@ -72,7 +72,7 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 
 <br>
 
-**Deprecated** [![Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.](/badges/deprecated.svg)](https://getwilds.github.io/badges/#deprecated)
+**Deprecated** [![Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.](/badges/deprecated.svg)](https://getwilds.org/badges/#deprecated)
 
 <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
   <button type="button" class="btn btn-info" onclick="copysample('deprecated','md')">Markdown</button>

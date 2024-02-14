@@ -1,1 +1,1 @@
-<a href="https://getwilds.github.io/badges/#experimental"><img src="https://getwilds.github.io/badges/badges/experimental.svg" alt="Project Status: Experimental – Useable, some support, not open to feedback, unstable API." /></a>
+<a href="https://getwilds.org/badges/#experimental"><img src="https://getwilds.org/badges/badges/experimental.svg" alt="Project Status: Experimental – Useable, some support, not open to feedback, unstable API." /></a>

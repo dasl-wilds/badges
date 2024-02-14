@@ -5,7 +5,7 @@ WILDS will and does have publicly available code in varying states of usability,
 
 Software maintainers often achieve this communication about the status of a piece of software using a simple badge at the top of the landing page for the software.
 
-For the majority of documentation about WILDS badges see <https://getwilds.github.io/badges/>
+For the majority of documentation about WILDS badges see <https://getwilds.org/badges/>
 
 ## References
 
