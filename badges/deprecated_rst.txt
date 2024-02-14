@@ -1,3 +1,3 @@
-.. image:: https://getwilds.github.io/badges/badges/suspended.svg
+.. image:: https://getwilds.org/badges/badges/suspended.svg
    :alt: Project Status: Suspended – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.
-   :target: https://getwilds.github.io/badges/#suspended
+   :target: https://getwilds.org/badges/#suspended

@@ -1,1 +1,1 @@
-<a href="https://getwilds.github.io/badges/#prototype"><img src="https://getwilds.github.io/badges/badges/prototype.svg" alt="Project Status: Prototype – Useable, some support, open to feedback, unstable API." /></a>
+<a href="https://getwilds.org/badges/#prototype"><img src="https://getwilds.org/badges/badges/prototype.svg" alt="Project Status: Prototype – Useable, some support, open to feedback, unstable API." /></a>

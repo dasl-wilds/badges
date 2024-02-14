@@ -1,1 +1,1 @@
-<a href="https://getwilds.github.io/#deprecated"><img src="https://getwilds.github.io/badges/badges/deprecated.svg" alt="Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date." /></a>
+<a href="https://getwilds.org/#deprecated"><img src="https://getwilds.org/badges/badges/deprecated.svg" alt="Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date." /></a>

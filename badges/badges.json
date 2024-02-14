@@ -2,26 +2,26 @@
   "concept": {
     "description": "Not useable, no support, not open to feedback, unstable API.",
     "display_name": "Concept",
-    "url": "https://getwilds.github.io/badges/badges/concept.svg"
+    "url": "https://getwilds.org/badges/badges/concept.svg"
   },
   "experimental": {
     "description": "Useable, some support, not open to feedback, unstable API.",
     "display_name": "Experimental",
-    "url": "https://getwilds.github.io/badges/badges/experimental.svg"
+    "url": "https://getwilds.org/badges/badges/experimental.svg"
   },
   "prototype": {
     "description": "Useable, some support, open to feedback, unstable API.",
     "display_name": "Prototype",
-    "url": "https://getwilds.github.io/badges/badges/prototype.svg"
+    "url": "https://getwilds.org/badges/badges/prototype.svg"
   },
   "stable": {
     "description": "Useable, full support, open to feedback, stable API.",
     "display_name": "Stable",
-    "url": "https://getwilds.github.io/badges/badges/stable.svg"
+    "url": "https://getwilds.org/badges/badges/stable.svg"
   },
   "deprecated": {
     "description": "Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.",
     "display_name": "Deprecated",
-    "url": "https://getwilds.github.io/badges/badges/deprecated.svg"
+    "url": "https://getwilds.org/badges/badges/deprecated.svg"
   }
 }
