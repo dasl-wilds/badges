@@ -35,8 +35,8 @@
         } else if ( markup == "html") {
           outtype = "HTML";
         }
-        $("#sampletitle").html(outtype + " for " + badge_data[badgename]['display_name'] + " Status (<a href=\"https://getwilds.github.io/badges/badges/" + badgename + "_" + markup + ".txt\">direct link</a>)");
-        $.get('https://getwilds.github.io/badges/badges/' + badgename + '_' + markup + '.txt', function(data) {
+        $("#sampletitle").html(outtype + " for " + badge_data[badgename]['display_name'] + " Status (<a href=\"https://getwilds.org/badges/badges/" + badgename + "_" + markup + ".txt\">direct link</a>)");
+        $.get('https://getwilds.org/badges/badges/' + badgename + '_' + markup + '.txt', function(data) {
           $("#samplecode").html('<pre>' + htmlEncode(data) + '</pre>');
           copyToClipboard("#samplecode");
         });
