@@ -30,7 +30,7 @@ This incorporates three components:
 
 ## Use a badge
 
-Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 3 markup types (<a class="btn btn-sm btn-info" role="button">Markdown</a>, Restructured text (<a class="btn btn-sm btn-primary" role="button">ReST</a>), or <a class="btn btn-sm btn-secondary" role="button">HTML</a>; i.e., if your README is a markdown file, get the Markdown version of the badge). 
+Click any of the below buttons to copy to your clipboard the text for badges for the 5 badge types and for each of 3 markup types (<a class="btn btn-sm btn-info" role="button">Markdown</a>, Restructured text (<a class="btn btn-sm btn-primary" role="button">ReST</a>), or <a class="btn btn-sm btn-secondary" role="button">HTML</a>; i.e., if your README is a markdown file, get the Markdown version of the badge).
 
 **Concept** [![Project Status: Concept – Not useable, no support, not open to feedback, unstable API.](/badges/concept.svg)](https://getwilds.org/badges/#concept)
 
@@ -80,7 +80,7 @@ Click any of the below buttons to copy to your clipboard the text for badges for
   <button type="button" class="btn btn-secondary" onclick="copysample('deprecated','html')">HTML</button>
 </div>
 
-<div id="samplewrapper" style="display: none;"><h5 id="sampletitle"></h5><div id="samplecode"></div></div>
+<div id="notification">Badge copied to clipboard!</div>
 
 <br>
 
