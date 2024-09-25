@@ -4,47 +4,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/880c8cdd80.js" crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+    <style>
+      #notification {
+        display: none;
+        padding: 8px;
+        background-color: #5d6d7e;
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 7px;
+        z-index: 1000;
+      }
+    </style>
   </head>
+
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-      function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
+      const badge_data = {
+        concept: {
+          md: `[![Project Status: Concept – Not useable, no support, not open to feedback, unstable API.](https://getwilds.org/badges/badges/concept.svg)](https://getwilds.org/badges/#concept)`,
+          rst: `.. image:: https://getwilds.org/badges/badges/concept.svg
+ :alt: Project Status: Concept – Not useable, no support, not open to feedback, unstable API.
+ :target: https://getwilds.org/badges/#concept`,
+          html: `<a href="https://getwilds.org/badges/#concept"><img src="https://getwilds.org/badges/badges/concept.svg" alt="Project Status: Concept – Not useable, no support, not open to feedback, unstable API." /></a>`
+        },
+        experimental: {
+          md: `[![Project Status: Experimental – Useable, some support, not open to feedback, unstable API.](https://getwilds.org/badges/badges/experimental.svg)](https://getwilds.org/badges/#experimental)`,
+          rst: `.. image:: https://getwilds.org/badges/badges/experimental.svg
+ :alt: Project Status: Experimental – Useable, some support, not open to feedback, unstable API.
+ :target: https://getwilds.org/badges/#experimental`,
+          html: `<a href="https://getwilds.org/badges/#experimental"><img src="https://getwilds.org/badges/badges/experimental.svg" alt="Project Status: Experimental – Useable, some support, not open to feedback, unstable API." /></a>`
+        },
+        prototype: {
+          md: `[![Project Status: Prototype – Useable, some support, open to feedback, unstable API.](https://getwilds.org/badges/badges/prototype.svg)](https://getwilds.org/badges/#prototype)`,
+          rst: `.. image:: https://getwilds.org/badges/badges/prototype.svg
+ :alt: Project Status: Prototype – Useable, some support, open to feedback, unstable API.
+ :target: https://getwilds.org/badges/#prototype`,
+          html: `<a href="https://getwilds.org/badges/#prototype"><img src="https://getwilds.org/badges/badges/prototype.svg" alt="Project Status: Prototype – Useable, some support, open to feedback, unstable API." /></a>`
+        },
+        stable: {
+          md: `[![Project Status: Stable – Useable, full support, open to feedback, stable API.](https://getwilds.org/badges/badges/stable.svg)](https://getwilds.org/badges/#stable)`,
+          rst: `.. image:: https://getwilds.org/badges/badges/stable.svg
+ :alt: Project Status: Stable – Useable, full support, open to feedback, stable API.
+ :target: https://getwilds.org/badges/#stable`,
+          html: `<a href="https://getwilds.org/badges/#stable"><img src="https://getwilds.org/badges/badges/stable.svg" alt="Project Status: Stable – Useable, full support, open to feedback, stable API." /></a>`
+        },
+        deprecated: {
+          md: `[![Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.](https://getwilds.org/badges/badges/deprecated.svg)](https://getwilds.org/badges/#deprecated)`,
+          rst: `.. image:: https://getwilds.org/badges/badges/suspended.svg
+  :alt: Project Status: Suspended – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date.
+  :target: https://getwilds.org/badges/#suspended`,
+          html: `<a href="https://getwilds.org/#deprecated"><img src="https://getwilds.org/badges/badges/deprecated.svg" alt="Project Status: Deprecated – Useable as of a fixed, past date, no support, not open to feedback, stable API as of a fixed, past date." /></a>`
+        },
       }
-
-      var badge_data;
-
-      $.getJSON('badges/badges.json', function(json){ badge_data = json; });
 
       function copysample(badgename, markup) {
-        outtype = '';
-        if ( markup == "md" ) {
-          outtype = "Markdown";
-        } else if ( markup == "rst" ) {
-          outtype = "ReST";
-        } else if ( markup == "html") {
-          outtype = "HTML";
+        // Define the text based on the markup
+        let outtype;
+        if (markup === 'md') {
+          outtype = 'Markdown';
+        } else if (markup === 'rst') {
+          outtype = 'ReST';
+        } else if (markup === 'html') {
+          outtype = 'HTML';
+        } else {
+          console.error('Unsupported markup');
+          return;
         }
-        $("#sampletitle").html(outtype + " for " + badge_data[badgename]['display_name'] + " Status (<a href=\"https://getwilds.org/badges/badges/" + badgename + "_" + markup + ".txt\">direct link</a>)");
-        $.get('https://getwilds.org/badges/badges/' + badgename + '_' + markup + '.txt', function(data) {
-          $("#samplecode").html('<pre>' + htmlEncode(data) + '</pre>');
-          copyToClipboard("#samplecode");
-        });
-      }
 
-      function htmlEncode(value) {
-        return $('<div/>').text(value).html();
-      }
+        // Get data
+        let textToCopy = badge_data[badgename][markup]
+
+        // Copy the text to the clipboard
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+              console.log(`Copied to clipboard: ${textToCopy}`);
+              showNotification(); // Show notification on success
+          })
+          .catch(err => {
+              console.error('Could not copy text: ', err);
+          });
+      };
+
+      function showNotification() {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+
+        // Automatically hide the notification after 2 seconds
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 2000);
+      };
     </script>
   </body>
 </html>
