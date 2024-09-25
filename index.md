@@ -82,7 +82,6 @@ Click any of the below buttons to copy to your clipboard the text for badges for
 
 <div id="notification">Badge copied to clipboard!</div>
 
-
 <br>
 
 
